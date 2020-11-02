@@ -84,11 +84,30 @@ need to build it yourself from the repo
 #### Dependencies: 
 Thrax and OpenFST
 #### Usage
+TODO
 #### Example
-
+TODO
 input
 
 output
+
+## [althingi/s5](https://github.com/cadia-lvl/kaldi/tree/master/egs/althingi/s5)
+#### Type
+sequitur
+#### Location
+terra:/models/althingi
+#### Dependencies: 
+sequitur
+#### Usage
+It's best to use this only for ASR, not TTS because it's not precise enough.
+TODO
+#### Example
+TODO
+input
+```
+local/
+output
+
 
 ## repo link
 #### Type
