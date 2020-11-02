@@ -2,9 +2,9 @@
 #### Type: 
 Sequitur model
 #### Location: 
-available at this directory: pron_data/ipd_clean_slt2018.mdl
+model available here: [pron_data/ipd_clean_slt2018.mdl](https://github.com/cadia-lvl/tts_data/blob/master/pron_data/ipd_clean_slt2018.mdl)
 #### Dependencies: just do `pip3 install -r requirements`
-#### Usage: Look at tests/tests.py as to how to call it.
+#### Usage: Look at [tests/tests.py](https://github.com/cadia-lvl/tts_data/blob/master/tests/tests.py) as to how to call it.
 ####  Example 
 
 input file: 
