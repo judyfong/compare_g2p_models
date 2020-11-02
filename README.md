@@ -73,7 +73,23 @@ Multiple word support with a POST.
     ]
     
 Append `?t=tsv` to get the response in the Kaldi lexicon format.
+
 `Hasler	1.0	h a s t l ɛ r`
+
+## [grammatek/g2p-thrax](https://github.com/grammatek/g2p-thrax)
+#### Type
+thrax - rule based
+#### Location
+need to build it yourself from the repo
+#### Dependencies: 
+Thrax and OpenFST
+#### Usage
+#### Example
+
+input
+
+output
+
 ## repo link
 #### Type
 #### Location
