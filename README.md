@@ -33,7 +33,7 @@ forseti	althingi	~ f ɔ r̥ s ɛ t ɪ ~
 #### Type
 Sequitur model
 #### Location
-[https://github.com/atliSig/g2p](https://github.com/atliSig/g2p)
+[https://github.com/atliSig/g2p/blob/master/data/ipd_clean_slt2018.mdl](https://github.com/atliSig/g2p/blob/master/data/ipd_clean_slt2018.mdl)
 #### Dependencies:
 they're all listed in [requirements.txt](https://github.com/atliSig/g2p/blob/master/requirements.txt) within the repo
 #### Usage
