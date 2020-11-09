@@ -156,17 +156,22 @@ sequitur
 #### Location
 terra:/models/althingi
 #### Dependencies: 
-sequitur
+sequitur-g2p
 #### Usage
 It's best to use this only for ASR, not TTS because it's not precise enough.
-TODO
+
+train a g2p model with [local/train_g2p.sh](https://github.com/cadia-lvl/kaldi/blob/master/egs/althingi/s5/local/train_g2p.sh)
+
+transcribe words with [local/transcribe_g2p.sh](https://github.com/cadia-lvl/kaldi/blob/master/egs/althingi/s5/local/transcribe_g2p.sh)
 #### Example
-TODO
-input
+transcribing words
 ```
+$ srun ./local/transcribe_g2p.sh /models/g2p/sequitur/althingi/g2p.mdl temp/g2p_words.txt
+derp	t ɛː r p
+orð	ɔ r ð
+stack usage:  200
+
 ```
-local/
-output
 
 
 ## repo link
