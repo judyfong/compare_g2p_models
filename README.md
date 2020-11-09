@@ -144,12 +144,16 @@ need to build it yourself from the repo
 #### Dependencies: 
 Thrax and OpenFST
 #### Usage
-TODO
+TODO file io
 #### Example
-TODO
-input
+If you are doing this from the project root directory,
+```
+$./build/thraxg2p --far=grammars/g2p.far
+Input string: orð
+Output string:  O r D
+```
 
-output
+You can also pipe it in through stdin.
 
 ## [althingi/s5](https://github.com/cadia-lvl/kaldi/tree/master/egs/althingi/s5)
 #### Type
