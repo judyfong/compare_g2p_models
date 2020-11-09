@@ -30,6 +30,7 @@ forseti	althingi	~ f ɔ r̥ s ɛ t ɪ ~
 
 
 ## [atliSig/g2p](https://github.com/atliSig/g2p)
+This model was used for creating tts data collection scripts and for training unit selection voices by LVL.
 #### Type
 Sequitur model
 #### Location
