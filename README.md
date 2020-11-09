@@ -144,9 +144,10 @@ need to build it yourself from the repo
 #### Dependencies: 
 Thrax and OpenFST
 #### Usage
-TODO file io
+It's a good idea to put thraxg2p in your path so you can use it from anywhere.
+This uses x_sampa which means it's a one to one mapping of IPA to a ASCII only transcription
 #### Example
-If you are doing this from the project root directory,
+If you are getting the phonemes interactively from the project root directory,
 ```
 $./build/thraxg2p --far=grammars/g2p.far
 Input string: orð
@@ -154,6 +155,23 @@ Output string:  O r D
 ```
 
 You can also pipe it in through stdin.
+
+Doing file input and output
+```
+./build/thraxg2p --far=grammars/g2p.far --indir=temp --word_file=temp/test.txt > temp/out/test.tsv
+```
+
+input file
+```
+derp
+orð
+```
+
+output file
+```
+derp	t E r_0 p
+orð	O r D
+```
 
 ## [althingi/s5](https://github.com/cadia-lvl/kaldi/tree/master/egs/althingi/s5)
 #### Type
