@@ -11,14 +11,18 @@ This is a list of existing g2p repos, directions on how to get the respective mo
 * [template](#template)
 
 ## Specifications
-| Repo name | Toolkit | IPA or SAMPA | Details |
+| Repo name | Toolkit | IPA or SAMPA | PER\* | Details |
 |-----------|---------|------------|---------|
-| g2p-lstm | fairseq | SAMPA | [grammatek/g2p-lstm](#grammatekg2p-lstm) |
-| tts-data | sequitur | IPA | [cadia-lvl/tts-data](#cadia-lvltts_data) |
-| g2p | sequitur | IPA | [atliSig/g2p](#atlisigg2p) |
-| g2p-service | sequitur | NA/IPA | [rkjaran/g2p-service](#rkjarang2p-service) |
-| g2p-thrax | thrax | SAMPA | [grammatek/g2p-thrax](#grammatekg2p-thrax) |
-| althingi | sequitur | IPA | [kaldi/egs/althingi/s5](#althingis5)
+| g2p-lstm | fairseq | SAMPA | 4.07% (standard) | [grammatek/g2p-lstm](#grammatekg2p-lstm) |
+| tts-data | sequitur | IPA | N/A | [cadia-lvl/tts-data](#cadia-lvltts_data) |
+| g2p | sequitur | IPA | N/A | [atliSig/g2p](#atlisigg2p) |
+| g2p-service | sequitur | NA/IPA | N/A | [rkjaran/g2p-service](#rkjarang2p-service) |
+| g2p-thrax | thrax | SAMPA | 6.49% | [grammatek/g2p-thrax](#grammatekg2p-thrax) |
+| althingi | sequitur | IPA | N/A | [kaldi/egs/althingi/s5](#althingis5)
+
+\* This PER is based on the Icelandic Language Technology g2p test set with an
+emphasis on good coverage of grapheme combinations so this is higher than it
+would be in a normal texts.
 
 ## [grammatek/g2p-lstm](https://github.com/grammatek/g2p-lstm)
 ### Type:
