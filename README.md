@@ -1,15 +1,41 @@
 ## Table of Contents
+* [grammatek/g2p-lstm](#grammatekg2p-lstm)
 * [cadia-lvl/tts-data](#cadia-lvltts_data)
 * [atliSig/g2p](#atlisigg2p)
 * [rkjaran/g2p-service](#rkjarang2p-service)
 * [grammatek/g2p-thrax](#grammatekg2p-thrax)
 * [althingi/s5](#althingis5)
 
+## [grammatek/g2p-lstm](https://github.com/grammatek/g2p-lstm)
+### Type:
+fairseq lstm (python) models
+#### Location:
+the models are available in
+[checkpoints](https://github.com/grammatek/g2p-lstm/tree/master/checkpoints)
+and [data-bin](https://github.com/grammatek/g2p-lstm/tree/master/data-bin)
+There are g2p models for Icelandic four main regional dialects: north, northest, south, and standard(west).
+#### Dependencies:
+Install all dependencies with the following
+`conda env create -f environment.yml`
+#### Usage Example
+Here's a usage example on the command line
+
+```
+$ cat example.txt
+h l a u p a
+d e r p
+$ cat example.txt | ./transcribe_ice_standard example_g2p_standard.out example_g2p_standard.tsv
+$ cat example_g2p_standard.tsv
+h l a u p a	l_0 9i: p a
+d e r p	t E r_0 p
+```
+
 ## [cadia-lvl/tts_data](https://github.com/cadia-lvl/tts_data)
 #### Type: 
 Sequitur model
 #### Location: 
-model available here: [pron_data/ipd_clean_slt2018.mdl](https://github.com/cadia-lvl/tts_data/blob/master/pron_data/ipd_clean_slt2018.mdl)
+model available here:
+[pron_data/ipd_clean_slt2018.mdl](https://github.com/cadia-lvl/tts_data/blob/master/pron_data/ipd_clean_slt2018.mdl)
 #### Dependencies: just do `pip3 install -r requirements`
 #### Usage: Look at [tests/tests.py](https://github.com/cadia-lvl/tts_data/blob/master/tests/tests.py) as to how to call it.
 ####  Example 
