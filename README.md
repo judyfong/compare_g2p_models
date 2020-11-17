@@ -1,10 +1,12 @@
 ## Table of Contents
+* [Specifications](#specifications)
 * [grammatek/g2p-lstm](#grammatekg2p-lstm)
 * [cadia-lvl/tts-data](#cadia-lvltts_data)
 * [atliSig/g2p](#atlisigg2p)
 * [rkjaran/g2p-service](#rkjarang2p-service)
 * [grammatek/g2p-thrax](#grammatekg2p-thrax)
 * [kaldi/egs/althingi/s5](#althingis5)
+* [template](#template)
 
 ## Specifications
 | Repo name | Toolkit | IPA or SAMPA | Details |
@@ -255,6 +257,9 @@ stack usage:  200
 ```
 
 
+## Template
+Here's a template for adding new Icelandic g2p repos.
+```
 ## repo link
 #### Type
 #### Location
@@ -265,3 +270,4 @@ stack usage:  200
 input
 
 output
+```
