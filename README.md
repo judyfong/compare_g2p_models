@@ -4,7 +4,17 @@
 * [atliSig/g2p](#atlisigg2p)
 * [rkjaran/g2p-service](#rkjarang2p-service)
 * [grammatek/g2p-thrax](#grammatekg2p-thrax)
-* [althingi/s5](#althingis5)
+* [kaldi/egs/althingi/s5](#althingis5)
+
+## Specifications
+| Repo name | Toolkit | IPA or SAMPA | Details |
+|-----------|---------|------------|---------|
+| g2p-lstm | fairseq | SAMPA | [grammatek/g2p-lstm](#grammatekg2p-lstm) |
+| tts-data | sequitur | IPA | [cadia-lvl/tts-data](#cadia-lvltts_data) |
+| g2p | sequitur | IPA | [atliSig/g2p](#atlisigg2p) |
+| g2p-service | sequitur | NA/IPA | [rkjaran/g2p-service](#rkjarang2p-service) |
+| g2p-thrax | thrax | SAMPA | [grammatek/g2p-thrax](#grammatekg2p-thrax) |
+| althingi | sequitur | IPA | [kaldi/egs/althingi/s5](#althingis5)
 
 ## [grammatek/g2p-lstm](https://github.com/grammatek/g2p-lstm)
 ### Type:
