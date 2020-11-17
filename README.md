@@ -12,7 +12,7 @@ This is a list of existing g2p repos, directions on how to get the respective mo
 
 ## Specifications
 | Repo name | Toolkit | IPA or SAMPA | PER\* | Details |
-|-----------|---------|------------|---------|
+|-----------|---------|------------|---------|---------|
 | g2p-lstm | fairseq | SAMPA | 4.07% (standard) | [grammatek/g2p-lstm](#grammatekg2p-lstm) |
 | tts-data | sequitur | IPA | N/A | [cadia-lvl/tts-data](#cadia-lvltts_data) |
 | g2p | sequitur | IPA | N/A | [atliSig/g2p](#atlisigg2p) |
