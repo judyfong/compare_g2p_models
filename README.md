@@ -1,3 +1,5 @@
+This is a list of existing g2p repos, directions on how to get the respective models, and how to use these models to get phonemes.
+
 ## Table of Contents
 * [Specifications](#specifications)
 * [grammatek/g2p-lstm](#grammatekg2p-lstm)
@@ -233,7 +235,9 @@ orð	O r D
 sequitur
 IPA
 #### Location
-There are no public models.
+There are no public models but you can contact [lvl.ru.is](https://lvl.ru.is/)
+if you would like a copy.
+
 terra:/models/althingi
 #### Dependencies:
 sequitur-g2p
