@@ -11,17 +11,6 @@ This is a list of existing g2p repos, directions on how to get the respective mo
 * [template](#template)
 
 ## Specifications
-|---
-| Default aligned | Left aligned | Center aligned | Right aligned
-|-|:-|:-:|-:
-| First body part | Second cell | Third cell | fourth cell
-| Second line |foo | **strong** | baz
-| Third line |quux | baz | bar
-|---
-| Second body
-| 2 line
-|===
-
 
    | Repo name | Toolkit | IPA or SAMPA | PER\* | Details |
    |-----------|---------|------------|---------|---------|
