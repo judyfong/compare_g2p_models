@@ -9,11 +9,14 @@
 ## [grammatek/g2p-lstm](https://github.com/grammatek/g2p-lstm)
 ### Type:
 fairseq lstm (python) models
+SAMPA
 #### Location:
 the models are available in
 [checkpoints](https://github.com/grammatek/g2p-lstm/tree/master/checkpoints)
 and [data-bin](https://github.com/grammatek/g2p-lstm/tree/master/data-bin)
-There are g2p models for Icelandic four main regional dialects: north, northest, south, and standard(west).
+
+There are g2p models for Icelandic four main regional dialects: north,
+northest, south, and standard(west).
 #### Dependencies:
 Install all dependencies with the following
 `conda env create -f environment.yml`
@@ -24,23 +27,27 @@ Here's a usage example on the command line
 $ cat example.txt
 h l a u p a
 d e r p
-$ cat example.txt | ./transcribe_ice_standard example_g2p_standard.out example_g2p_standard.tsv
+$ cat example.txt | ./transcribe_ice_standard \
+ example_g2p_standard.out example_g2p_standard.tsv
 $ cat example_g2p_standard.tsv
 h l a u p a	l_0 9i: p a
 d e r p	t E r_0 p
 ```
 
 ## [cadia-lvl/tts_data](https://github.com/cadia-lvl/tts_data)
-#### Type: 
+#### Type:
 Sequitur model
-#### Location: 
+IPA
+#### Location:
 model available here:
 [pron_data/ipd_clean_slt2018.mdl](https://github.com/cadia-lvl/tts_data/blob/master/pron_data/ipd_clean_slt2018.mdl)
 #### Dependencies: just do `pip3 install -r requirements`
-#### Usage: Look at [tests/tests.py](https://github.com/cadia-lvl/tts_data/blob/master/tests/tests.py) as to how to call it.
-####  Example 
+#### Usage:
+[tests/tests.py](https://github.com/cadia-lvl/tts_data/blob/master/tests/tests.py)
+gives an example of to how to call it.
+####  Example
 
-input file: 
+input file:
 `<phrase>tab<list-name>`
 ```
 Mammon vor er alhreinn orðinn	althingi
@@ -56,13 +63,17 @@ forseti	althingi	~ f ɔ r̥ s ɛ t ɪ ~
 
 
 ## [atliSig/g2p](https://github.com/atliSig/g2p)
-This model was used for creating tts data collection scripts and for training unit selection voices by LVL.
+This model was used for creating tts data collection scripts and for training
+unit selection voices by LVL.
 #### Type
 Sequitur model
+IPA
 #### Location
 [https://github.com/atliSig/g2p/blob/master/data/ipd_clean_slt2018.mdl](https://github.com/atliSig/g2p/blob/master/data/ipd_clean_slt2018.mdl)
 #### Dependencies:
-they're all listed in [requirements.txt](https://github.com/atliSig/g2p/blob/master/requirements.txt) within the repo
+They're all listed in
+[requirements.txt](https://github.com/atliSig/g2p/blob/master/requirements.txt)
+within the repo
 #### Usage
 ```
     Input arguments:
@@ -107,12 +118,15 @@ Lesendur þurfa að fá tækifæri til að njóta hans.	~ l ɛː s ɛ n t ʏ r	�
 ```
 
 ## [rkjaran/g2p-service](https://github.com/rkjaran/g2p-service)
-#### Type 
+#### Type
 sequitur wrapper
+
+The endpoint is IPA but the repo is just whatever model type you put in.
 #### Location
-doesn't come with a model but there's an endpoint: [https://nlp.talgreinir.is/pron/derp](https://nlp.talgreinir.is/pron/derp)
+It doesn't come with a model but there's an endpoint:
+[https://nlp.talgreinir.is/pron/derp](https://nlp.talgreinir.is/pron/derp)
 #### Dependencies
-install via dockerfile
+Install via dockerfile
 #### Usage
 #### Example
 
@@ -133,7 +147,7 @@ $ curl -XGET https://nlp.talgreinir.is/pron/derp | jq
 ```
 
 Multiple word support with a POST.
-    
+
     $ cat <<EOF | curl -XPOST -d@- https://nlp.talgreinir.is/pron | jq
     {"words": ["herp", "derp"]}
     EOF
@@ -157,7 +171,7 @@ Multiple word support with a POST.
         "word": "derp"
       }
     ]
-    
+
 Append `?t=tsv` to get the response in the Kaldi lexicon format.
 
 `Hasler	1.0	h a s t l ɛ r`
@@ -165,13 +179,15 @@ Append `?t=tsv` to get the response in the Kaldi lexicon format.
 ## [grammatek/g2p-thrax](https://github.com/grammatek/g2p-thrax)
 #### Type
 thrax - rule based
+SAMPA
 #### Location
 need to build it yourself from the repo
-#### Dependencies: 
+#### Dependencies:
 Thrax and OpenFST
 #### Usage
 It's a good idea to put thraxg2p in your path so you can use it from anywhere.
-This uses x_sampa which means it's a one to one mapping of IPA to a ASCII only transcription
+This uses x_sampa which means it's a one to one mapping of IPA to a ASCII only
+transcription
 #### Example
 If you are getting the phonemes interactively from the project root directory,
 ```
@@ -184,7 +200,8 @@ You can also pipe it in through stdin.
 
 Doing file input and output
 ```
-./build/thraxg2p --far=grammars/g2p.far --indir=temp --word_file=temp/test.txt > temp/out/test.tsv
+./build/thraxg2p --far=grammars/g2p.far --indir=temp \
+ --word_file=temp/test.txt > temp/out/test.tsv
 ```
 
 input file
@@ -202,20 +219,25 @@ orð	O r D
 ## [althingi/s5](https://github.com/cadia-lvl/kaldi/tree/master/egs/althingi/s5)
 #### Type
 sequitur
+IPA
 #### Location
+There are no public models.
 terra:/models/althingi
-#### Dependencies: 
+#### Dependencies:
 sequitur-g2p
 #### Usage
 It's best to use this only for ASR, not TTS because it's not precise enough.
 
-train a g2p model with [local/train_g2p.sh](https://github.com/cadia-lvl/kaldi/blob/master/egs/althingi/s5/local/train_g2p.sh)
+train a g2p model with
+[local/train_g2p.sh](https://github.com/cadia-lvl/kaldi/blob/master/egs/althingi/s5/local/train_g2p.sh)
 
-transcribe words with [local/transcribe_g2p.sh](https://github.com/cadia-lvl/kaldi/blob/master/egs/althingi/s5/local/transcribe_g2p.sh)
+transcribe words with
+[local/transcribe_g2p.sh](https://github.com/cadia-lvl/kaldi/blob/master/egs/althingi/s5/local/transcribe_g2p.sh)
 #### Example
 transcribing words
 ```
-$ srun ./local/transcribe_g2p.sh /models/g2p/sequitur/althingi/g2p.mdl temp/g2p_words.txt
+$ srun ./local/transcribe_g2p.sh /models/g2p/sequitur/althingi/g2p.mdl \
+ temp/g2p_words.txt
 derp	t ɛː r p
 orð	ɔ r ð
 stack usage:  200
